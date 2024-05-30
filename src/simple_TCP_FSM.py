@@ -1,5 +1,5 @@
 """https://www.codewars.com/kata/54acc128329e634e9a000362
-Automatons, or Finite State Machines (FSM), are extremely useful to programmers when it comes to software design. 
+Automatons, or Finite State Machines (FSM), are extremely useful to programmers when it comes to software design.
 You will be given a simplistic version of an FSM to code for a basic TCP session.
 
 The outcome of this exercise will be to return the correct state of the TCP FSM based on the array of events given.
@@ -10,7 +10,7 @@ APP_PASSIVE_OPEN, APP_ACTIVE_OPEN, APP_SEND, APP_CLOSE, APP_TIMEOUT, RCV_SYN, RC
 The states are as follows and should be returned in all capital letters as shown:
 
 CLOSED, LISTEN, SYN_SENT, SYN_RCVD, ESTABLISHED, CLOSE_WAIT, LAST_ACK, FIN_WAIT_1, FIN_WAIT_2, CLOSING, TIME_WAIT
-The input will be an array of events. The initial state is CLOSED. Your job is to traverse the FSM as determined by the events, 
+The input will be an array of events. The initial state is CLOSED. Your job is to traverse the FSM as determined by the events,
 and return the proper final state as a string, all caps, as shown above.
 
 If an event is not applicable to the current state, your code will return "ERROR".
@@ -48,7 +48,7 @@ Examples
 
 # Lookup Closed State and map to New State.
 # The first value must be Closed State
-# Lookup New State and Event and return New State 
+# Lookup New State and Event and return New State
 """
 
 from typing import List

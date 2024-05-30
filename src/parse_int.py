@@ -88,7 +88,7 @@ def process_part(part: str, acc: int) -> int:
             acc += value
     else:
         # Handle compound numbers like "twenty-one"
-        parts = part.split('-')
+        parts = part.split("-")
         for subpart in parts:
             if subpart in lookup:
                 acc += lookup[subpart]

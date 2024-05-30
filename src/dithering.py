@@ -21,14 +21,14 @@ The following diagrams show the order of the coordinates the algorithm shall pro
 16  8 14  6
 
 8x8:
- 1  33   9  41   3  35  11  43 
-49  17  57  25  51  19  59  27 
-13  45   5  37  15  47   7  39 
-61  29  53  21  63  31  55  23 
- 4  36  12  44   2  34  10  42 
-52  20  60  28  50  18  58  26 
-16  48   8  40  14  46   6  38 
-64  32  56  24  62  30  54  22 
+ 1  33   9  41   3  35  11  43
+49  17  57  25  51  19  59  27
+13  45   5  37  15  47   7  39
+61  29  53  21  63  31  55  23
+ 4  36  12  44   2  34  10  42
+52  20  60  28  50  18  58  26
+16  48   8  40  14  46   6  38
+64  32  56  24  62  30  54  22
 The pattern continues like that for each square pixmap with a width and height of a power of two (16, 32, 64, …).
 
 But the width and the height of the pixmap can be arbitrary positive numbers. If the pixmap's width and/or height are not a power of two, the coordinates the algorithm would produce outside of the pixmap are skipped:
@@ -36,7 +36,7 @@ But the width and the height of the pixmap can be arbitrary positive numbers. If
 3x3:
 1 6 3
 8 5 9
-4 7 2   
+4 7 2
 
 6x5:
  1 16  6 21  3 18
@@ -85,9 +85,9 @@ def dithering(width, height):
         for x in range(width):
             morton_code = interleave_bits(x, y)
             coords.append((morton_code, x, y))
-    
+
     coords.sort()
-    
+
     for _, x, y in coords:
         yield (x, y)
 ```

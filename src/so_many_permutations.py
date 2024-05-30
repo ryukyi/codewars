@@ -20,6 +20,7 @@ Your function should return ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 
 from itertools import permutations as ps
 
+
 def permutations(s: str) -> str:
     result = ["".join(p) for p in list(ps(s, len(s)))]
     return set(result)

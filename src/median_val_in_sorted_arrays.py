@@ -20,10 +20,11 @@ Tests
 import heapq
 from typing import List
 
+
 class MedianFinder:
     def __init__(self):
         self.low = []  # Max heap (invert min-heap)
-        self.high = [] # Min heap
+        self.high = []  # Min heap
 
     def add_num(self, num: int):
         # Add to max heap
@@ -46,6 +47,7 @@ class MedianFinder:
             return float(-self.low[0])
         return (-self.low[0] + self.high[0]) / 2.0
 
+
 def median_from_n_arrays(arrays: List[List[int]]) -> float:
     median_finder = MedianFinder()
     for array in arrays:
@@ -53,6 +55,7 @@ def median_from_n_arrays(arrays: List[List[int]]) -> float:
             median_finder.add_num(number)
     return median_finder.find_median()
 
+
 if __name__ == "__main__":
-    result = median_from_n_arrays([[1,2,3],[4,5],[100,101,102]])
+    result = median_from_n_arrays([[1, 2, 3], [4, 5], [100, 101, 102]])
     print(result)

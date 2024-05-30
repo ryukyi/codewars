@@ -1,4 +1,4 @@
-""" 
+"""
 https://www.codewars.com/kata/5c1d796370fee68b1e000611
 
 Everybody likes sliding puzzles! For this kata, we're going to be looking at a special type of sliding puzzle called Loopover. With Loopover, it is more like a flat rubik's cube than a sliding puzzle. Instead of having one open spot for pieces to slide into, the entire grid is filled with pieces that wrap back around when a row or column is slid.
